@@ -1,0 +1,24 @@
+.header-nav {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1.95px 2.6px;
+  padding: 10px 10px;
+  position: relative;
+  text-align: center;
+
+  &__previous-link {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 1.5rem;
+
+    &--hidden {
+      display: none;  
+    }
+  }
+
+  &__home-link {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+  }
+}
