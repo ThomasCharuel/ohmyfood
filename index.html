@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ohmyfood! - Accueil</title>
+
+    <link href="public/css/style.css" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <img src="public/images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood!">
+        </nav>
+        <section class="location-section">
+            Paris, Belleville
+        </section>
+        <section class="main-header-section">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <a href="#restaurants-section" class="main-header-section__button cta-button reset">Explorer nos restaurants</a>
+        </section>
+    </header>
+    <main>
+        <article class="how-to-section">
+            <h2>Fonctionnement</h2>
+            <ol>
+                <li><p>Choisissez un restaurant</p></li>
+                <li><p>Composez votre menu</p></li>
+                <li><p>Dégustez au restaurant</p></li>
+            </ol>
+        </article>
+        <section class="restaurants-section">
+            <h2>Restaurants</h2>
+            <ul class="restaurants-section__listing reset">
+                <li>
+                    <article class="restaurants-card">
+                        <a href="./public/html/restaurant__la_palette_du_gout.html" class="restaurant-card__link reset">
+                            <div>
+                                <img src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo de La palette du goût" class="restaurant-card__image">
+                                <p>Nouveau</p>
+                            </div>
+                            <section class="restaurant-card__info-section">
+                                <header class="restaurant-card__header">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </header>
+                                <button class="restaurant-card__like-button">like</button>
+                            </section>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="#"><img src="public/images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood!"></a>
+            <ul class="reset">
+                <li><a href="#" class="footer-nav__link reset">Proposer un restaurant</a></li>
+                <li><a href="#" class="footer-nav__link reset">Devenir partenaire</a></li>
+                <li><a href="#" class="footer-nav__link reset">Mentions légales</a></li>
+                <li><a href="mailto:hello@ohmyfood.tech" class="footer-nav__link reset">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
