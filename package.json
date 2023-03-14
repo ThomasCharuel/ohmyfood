@@ -1,0 +1,16 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Oh My Food Project by OpenClassRooms",
+  "scripts": {
+    "sass": "sass ./sass/main.scss:./public/css/style.css -w --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasCharuel/ohmyfood.git"
+  },
+  "author": "Thomas Charuel",
+  "homepage": "https://github.com/ThomasCharuel/ohmyfood#readme",
+  "browserslist": "last 4 versions"
+}
