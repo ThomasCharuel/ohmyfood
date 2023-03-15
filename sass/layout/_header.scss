@@ -1,6 +1,6 @@
 .header-nav {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 1.95px 2.6px;
-  padding: 10px 10px;
+  padding: 10px 0px;
   position: relative;
   text-align: center;
 
@@ -17,8 +17,41 @@
 
   &__home-link {
     font-family: 'Shrikhand', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     display: inline-block;
+  }
+}
+
+.location-section {
+  background-color: $color-grey;
+  text-align: center;
+  font-weight: $font-weight-bold;
+  font-size: 1rem;
+  padding: 15px 0px;
+
+  i {
+    margin-right: 15px;
+  }
+}
+
+.main-header-section {
+  background-color: $color-light-grey;
+  text-align: center;
+  padding: 40px 20px 60px;
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: $font-weight-bolder;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+  }
+
+  &__cta-btn {
+    display: inline-block; // Take the element in the parent's padding
   }
 }

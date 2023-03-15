@@ -10,23 +10,23 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&family=Shrikhand&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/fc7bf56647.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="header-nav">
-            <a href="index.html" class="header-nav__previous-link header-nav__previous-link--hidden reset"><i class="fa-solid fa-arrow-left"></i></a>
-            <a href="#" class="header-nav__home-link reset">ohmyfood</a>
+            <a href="index.html" class="header-nav__previous-link header-nav__previous-link--hidden"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="#" class="header-nav__home-link">ohmyfood</a>
         </nav>
         <section class="location-section">
             <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
         </section>
         <section class="main-header-section">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <a href="#restaurants-section" class="main-header-section__button cta-button reset">Explorer nos restaurants</a>
+            <h1 class="main-header-section__title">Réservez le menu qui vous convient</h1>
+            <p class="main-header-section__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <a href="#restaurants-section" class="main-header-section__cta-btn cta-btn">Explorer nos restaurants</a>
         </section>
     </header>
     <main>
@@ -40,10 +40,10 @@
         </article>
         <section class="restaurants-section">
             <h2>Restaurants</h2>
-            <ul class="restaurants-section__listing reset">
+            <ul class="restaurants-section__listing">
                 <li>
                     <article class="restaurants-card">
-                        <a href="./public/html/restaurant__la_palette_du_gout.html" class="restaurant-card__link reset">
+                        <a href="./public/html/restaurant__la_palette_du_gout.html" class="restaurant-card__link">
                             <div>
                                 <img src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo de La palette du goût" class="restaurant-card__image">
                                 <p>Nouveau</p>
@@ -63,12 +63,12 @@
     </main>
     <footer>
         <nav class="footer-nav">
-            <ul class="reset">
-                <li><a href="#" class="footer-nav__link footer-nav__link--logo reset">ohmyfood</a></li>
-                <li><a href="#" class="footer-nav__link reset"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-                <li><a href="#" class="footer-nav__link reset"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
-                <li><a href="#" class="footer-nav__link reset">Mentions légales</a></li>
-                <li><a href="mailto:hello@ohmyfood.tech" class="footer-nav__link reset">Contact</a></li>
+            <ul>
+                <li><a href="#" class="footer-nav__link footer-nav__link--logo">ohmyfood</a></li>
+                <li><a href="#" class="footer-nav__link"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#" class="footer-nav__link"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                <li><a href="#" class="footer-nav__link">Mentions légales</a></li>
+                <li><a href="mailto:hello@ohmyfood.tech" class="footer-nav__link">Contact</a></li>
             </ul>
         </nav>
     </footer>

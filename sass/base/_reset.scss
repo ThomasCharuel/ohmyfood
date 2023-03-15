@@ -9,12 +9,16 @@ body {
 	box-sizing: inherit;
 }
 
-ul.reset {
+p, h1 {
+  margin: unset;
+}
+
+ul {
   padding: 0;
   list-style-type: none;
 }
 
-a.reset {
+a {
   color: unset;
   text-decoration: unset;
 }

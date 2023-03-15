@@ -1,0 +1,14 @@
+.cta-btn {
+  color: white;
+  font-weight: $font-weight-bold;
+  font-size: 1rem;
+  border-radius: 50px;
+  padding: 15px 25px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 15px;
+  background-image: linear-gradient(to bottom, $color-secondary, $color-primary);
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px;
+    background-image: linear-gradient(to bottom, lighten($color-secondary, 2%), lighten($color-primary, 5%));
+  }
+}
