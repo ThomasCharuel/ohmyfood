@@ -1,0 +1,27 @@
+.footer-nav {
+  background-color: $color-dark-grey;
+
+  padding: 30px;
+  color: white;
+
+  &__link {
+    display: inline-block;
+    margin: 4px;
+    font-weight: $font-weight-bold;
+    
+    &--logo {
+      font-family: 'Shrikhand', sans-serif;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+    
+    i {
+      font-size: 0.8rem;
+      width: 25px;
+    }
+
+    &:hover {
+      color: darken(white, 10%);
+    }
+  }
+}
