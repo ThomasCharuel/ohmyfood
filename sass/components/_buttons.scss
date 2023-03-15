@@ -1,4 +1,5 @@
 .cta-btn {
+  display: inline-block; // Take the element in the parent's padding
   color: white;
   font-weight: $font-weight-bold;
   font-size: 1rem;
@@ -10,5 +11,27 @@
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px;
     background-image: linear-gradient(to bottom, lighten($color-secondary, 2%), lighten($color-primary, 5%));
+  }
+}
+
+.like-button {
+  font-size: 1.6rem;
+  cursor: pointer;
+
+  .fa-solid {
+    display: none;
+    cursor: pointer;
+    background: linear-gradient(to top, lighten($color-secondary, 2%), lighten($color-primary, 5%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &:hover {
+    .fa-regular {
+      display: none;
+    }
+    .fa-solid {
+      display: inline-block;
+    }
   }
 }

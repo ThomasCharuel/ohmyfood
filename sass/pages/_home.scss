@@ -122,24 +122,6 @@
 
   &__like-button {
     font-size: 1.6rem;
-    cursor: pointer;
-
-    .fa-solid {
-      display: none;
-      cursor: pointer;
-      background: linear-gradient(to top, lighten($color-secondary, 2%), lighten($color-primary, 5%));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    &:hover {
-      .fa-regular {
-        display: none;
-      }
-      .fa-solid {
-        display: inline-block;
-      }
-    }
   }
 }
 
