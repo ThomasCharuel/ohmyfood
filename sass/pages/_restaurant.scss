@@ -38,6 +38,15 @@
 .course-list-item {
   margin-bottom: 50px;
 
+  $animation-delay: 0.5s;
+  animation: menu-loading 1.5s backwards cubic-bezier(.4,.1,.6,.9);
+
+  @for $i from 1 through 10 {
+    &--#{$i} {
+      animation-delay: $i * $animation-delay;
+    }
+  }
+
   &__title {
     text-transform: uppercase;
     font-size: 1.1em;
