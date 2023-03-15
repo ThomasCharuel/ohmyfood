@@ -1,0 +1,19 @@
+.home-main {
+  & > * {
+    padding: 30px 25px;
+  }
+
+  h2 {
+    font-weight: $font-weight-bolder;
+  }
+}
+
+.how-to-section {
+  &__list {
+    list-style-type: decimal;
+  }
+}
+
+.restaurants-section {
+  background-color: $color-light-grey;
+}
