@@ -1,10 +1,14 @@
 @keyframes menu-loading {
   0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(15px);
   }
   100% {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+@mixin menu-loading-animation($delay) {
+  animation: menu-loading 1.5s $delay backwards cubic-bezier(.4,.1,.6,.9);
 }

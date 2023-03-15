@@ -1,0 +1,3 @@
+@mixin menu-loading-animation($delay) {
+  animation: menu-loading 0.5s $delay backwards cubic-bezier(.4,.1,.6,.9);
+}

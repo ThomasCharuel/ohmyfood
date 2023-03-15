@@ -38,20 +38,17 @@
 .course-list-item {
   margin-bottom: 50px;
 
-  $animation-delay: 0.5s;
-  animation: menu-loading 1.5s backwards cubic-bezier(.4,.1,.6,.9);
-
-  @for $i from 1 through 10 {
-    &--#{$i} {
-      animation-delay: $i * $animation-delay;
-    }
-  }
-
   &__title {
     text-transform: uppercase;
     font-size: 1.1em;
     font-weight: $font-weight-bold;
     position: relative;
+    
+    @for $course_i from 1 through 3 {
+      &--#{$course_i} {
+        @include menu-loading-animation($course_i * $menu-loading-title-animation-delay);
+      }
+    }
 
     &::after {
       content: '';
@@ -76,6 +73,17 @@
   background-color: white;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
+
+  @for $course_i from 1 through 3 {
+    @for $dish_i from 1 through 10 {
+      &--#{$course_i}-#{$dish_i} {
+        @include menu-loading-animation(
+          ($course_i * $menu-loading-title-animation-delay)
+          + ($dish_i * $menu-loading-card-animation-delay)
+        );
+      }
+    }
+  }
 
   &__cta-btn {
     width: 100%;
