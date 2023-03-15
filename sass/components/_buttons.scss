@@ -17,21 +17,37 @@
 .like-button {
   font-size: 1.6rem;
   cursor: pointer;
+  position: relative;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
 
-  .fa-solid {
-    display: none;
-    cursor: pointer;
+  .outline-heart, .filled-heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .outline-heart {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  .filled-heart {
     background: linear-gradient(to top, lighten($color-secondary, 2%), lighten($color-primary, 5%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
   }
 
   &:hover {
-    .fa-regular {
-      display: none;
+    .outline-heart {
+      opacity: 0;
     }
-    .fa-solid {
-      display: inline-block;
+    .filled-heart {
+      opacity: 1;
     }
   }
 }
