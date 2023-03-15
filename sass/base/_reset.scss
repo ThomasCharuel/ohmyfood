@@ -9,7 +9,7 @@ body {
 	box-sizing: inherit;
 }
 
-p, h1 {
+p, h1, h2, h3 {
   margin: unset;
 }
 
@@ -22,4 +22,9 @@ ul, ol {
 a {
   color: unset;
   text-decoration: unset;
+}
+
+button {
+  border: unset;
+  background-color: unset;
 }
