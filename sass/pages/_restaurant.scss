@@ -22,10 +22,87 @@
 
   &__title {
     font-family: 'Shrikhand', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   &__like-button {
     font-size: 1.8rem;
+  }
+}
+
+.restaurant-menu-section {
+  background-color: $color-light-grey;
+  padding: 30px 15px 50px;
+}
+
+.course-list-item {
+  margin-bottom: 50px;
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: $font-weight-bold;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 45px;
+      height: 3px;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      background-color: $color-highlight;
+    }
+  }
+
+  &__dishes-listing {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 0px 40px;
+  }
+}
+
+.dish-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
+
+  &__cta-btn {
+    width: 100%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__info-section {
+    padding: 15px 30px 15px 15px;
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: $font-weight-bolder;
+    }
+  }
+
+  &__info-section-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  &__info-section-text-description {
+    font-weight: $font-weight-thin;
+  }
+
+  &__info-section-text-price {
+    font-weight: $font-weight-bold;
+  }
+}
+
+.restaurant-cta-section {
+  text-align: center;
+
+  &__cta-btn {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }

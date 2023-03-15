@@ -27,16 +27,17 @@
     margin: 25px 0px 25px 15px;
 
     &::before {
+      $circle-diameter: 25px;
       content: counter(list-counter);
       background-color: $color-primary;
       color: white;
-      $circle-diameter: 25px;
       width: $circle-diameter;
       height: $circle-diameter;
       line-height: $circle-diameter;
       border-radius: 50%;
       text-align: center;
-
+      font-weight: $font-weight-bold;
+      font-size: 0.8rem;
       position: absolute;
       left: 0px;
       margin-top: -2px;
