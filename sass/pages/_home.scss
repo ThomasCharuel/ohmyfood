@@ -14,6 +14,13 @@
   &__list {
     counter-reset: list-counter; // CSS counter: https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include media-query-for-screen($desktop) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
   }
 
   &__list-item {
@@ -25,6 +32,7 @@
     padding: 28px 25px 25px 35px;
     border-radius: 20px;
     margin: 25px 0px 25px 15px;
+    position: relative;
 
     &::before {
       $circle-diameter: 25px;
@@ -39,7 +47,7 @@
       font-weight: $font-weight-bold;
       font-size: 0.8rem;
       position: absolute;
-      left: 0px;
+      left: -12px;
       margin-top: -2px;
     }
 
@@ -70,6 +78,16 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+
+    @include media-query-for-screen($tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    @include media-query-for-screen($desktop) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
   }
 }
 

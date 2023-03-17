@@ -16,3 +16,12 @@ $font-weight-bolder: 500;
 // Delays
 $menu-loading-title-animation-delay: 0.5s;
 $menu-loading-card-animation-delay: 0.1s;
+
+$tablet: "tablet";
+$desktop: "desktop";
+
+// Responsivity
+$breakpoints: (
+  $tablet: 768px,
+  $desktop: 992px,
+);

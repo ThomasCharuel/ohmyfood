@@ -73,20 +73,21 @@
     @include card-box-shadow;
     border-radius: 15px;
     background-color: white;
+
+    @for $course_i from 1 through 3 {
+      @for $dish_i from 1 through 10 {
+        &--#{$course_i}-#{$dish_i} {
+          @include menu-loading-animation(
+            ($course_i * $menu-loading-title-animation-delay)
+            + ($dish_i * $menu-loading-card-animation-delay)
+          );
+        }
+      }
+    }
   }
 }
 
 .dish-card {
-  @for $course_i from 1 through 3 {
-    @for $dish_i from 1 through 10 {
-      &--#{$course_i}-#{$dish_i} {
-        @include menu-loading-animation(
-          ($course_i * $menu-loading-title-animation-delay)
-          + ($dish_i * $menu-loading-card-animation-delay)
-        );
-      }
-    }
-  }
 
   &__cta-btn {
     display: flex;
