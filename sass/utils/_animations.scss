@@ -8,3 +8,18 @@
     transform: translateY(0px);
   }
 }
+
+@keyframes loading-spinner {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loading-spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

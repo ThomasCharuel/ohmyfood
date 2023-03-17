@@ -1,0 +1,26 @@
+$loading-spinner-duration: 3s;
+
+.loading-spinner {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: $color-light-grey;
+  z-index: 100;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: loading-spinner $loading-spinner-duration ease-in forwards;
+
+  &::after {
+    content: '';
+    width: 20vh;
+    height: 20vh;
+    border: 20px solid $color-primary;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: loading-spinner-rotate 0.5s ease-in-out infinite;
+  }
+}
