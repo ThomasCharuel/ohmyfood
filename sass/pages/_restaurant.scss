@@ -93,22 +93,19 @@
 }
 
 .dish-card {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  position: relative;
 
-  &__cta-btn {
-    display: flex;
-    align-items: stretch;
-    width: 100%;
-    position: relative;
+  &:hover {
+    cursor: pointer;
+    
+    & .dish-card__check-section {
+      margin-right: 0px;
 
-    &:hover {
-      cursor: pointer;
-      
-      & .dish-card__check-section {
-        margin-right: 0px;
-
-        .check-icon {
-          transform: rotate(720deg);
-        }
+      .check-icon {
+        transform: rotate(720deg);
       }
     }
   }
