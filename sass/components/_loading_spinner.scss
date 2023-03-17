@@ -1,4 +1,5 @@
 $loading-spinner-duration: 3s;
+$spinner-rotation-duration: 1s;
 
 .loading-spinner {
   position: fixed;
@@ -21,6 +22,6 @@ $loading-spinner-duration: 3s;
     border-bottom-color: transparent;
     border-radius: 50%;
     display: inline-block;
-    animation: loading-spinner-rotate 0.5s ease-in-out infinite;
+    animation: loading-spinner-rotate $spinner-rotation-duration cubic-bezier(.28,-0.01,.8,1) ($loading-spinner-duration / $spinner-rotation-duration);
   }
 }
