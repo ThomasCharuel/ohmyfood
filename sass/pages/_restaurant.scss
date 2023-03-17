@@ -67,13 +67,16 @@
     gap: 15px;
     margin: 20px 0px 40px;
   }
+
+  &__dishes-list-item {
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
+    border-radius: 15px;
+    background-color: white;
+  }
 }
 
 .dish-card {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
-
   @for $course_i from 1 through 3 {
     @for $dish_i from 1 through 10 {
       &--#{$course_i}-#{$dish_i} {
@@ -86,7 +89,10 @@
   }
 
   &__cta-btn {
+    display: flex;
+    align-items: stretch;
     width: 100%;
+
     &:hover {
       cursor: pointer;
     }
@@ -94,25 +100,47 @@
 
   &__info-section {
     padding: 15px 30px 15px 15px;
+    flex: 1;
+    overflow: hidden;
 
-    h3 {
+    h3{
       font-size: 1.2rem;
       font-weight: $font-weight-bolder;
+      font-weight: bold;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    &-text {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      overflow: hidden;
+
+      &-description {
+        font-weight: $font-weight-thin;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      &-price {
+        margin-left: 30px;
+        font-weight: $font-weight-bolder;
+      }
     }
   }
 
-  &__info-section-text {
+  &__check-section {
+    background-color: $color-highlight;
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
+    align-items: center;
+    padding: 0px 20px;
 
-  &__info-section-text-description {
-    font-weight: $font-weight-thin;
-  }
-
-  &__info-section-text-price {
-    font-weight: $font-weight-bolder;
+    .check-icon {
+      color: white;
+      font-size: 1.6rem;
+    }
   }
 }
 
