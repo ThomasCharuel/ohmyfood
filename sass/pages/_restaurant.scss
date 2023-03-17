@@ -92,9 +92,18 @@
     display: flex;
     align-items: stretch;
     width: 100%;
+    position: relative;
 
     &:hover {
       cursor: pointer;
+      
+      & .dish-card__check-section {
+        margin-right: 0px;
+
+        .check-icon {
+          transform: rotate(720deg);
+        }
+      }
     }
   }
 
@@ -137,9 +146,13 @@
     align-items: center;
     padding: 0px 20px;
 
+    margin-right: -70px;
+    transition: margin-right 0.8s ease-in-out;
+
     .check-icon {
       color: white;
       font-size: 1.6rem;
+      transition: transform 0.8s ease-in-out;
     }
   }
 }
