@@ -66,6 +66,11 @@
     grid-template-columns: 1fr;
     gap: 15px;
     margin: 20px 0px 40px;
+
+    @include media-query-for-screen($desktop) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
   }
 
   &__dishes-list-item {
