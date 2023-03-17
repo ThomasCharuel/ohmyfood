@@ -70,7 +70,7 @@
 
   &__dishes-list-item {
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
+    @include card-box-shadow;
     border-radius: 15px;
     background-color: white;
   }

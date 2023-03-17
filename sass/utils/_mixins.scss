@@ -1,3 +1,7 @@
 @mixin menu-loading-animation($delay) {
   animation: menu-loading 0.5s $delay backwards cubic-bezier(.4,.1,.6,.9);
 }
+
+@mixin card-box-shadow() {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+}
