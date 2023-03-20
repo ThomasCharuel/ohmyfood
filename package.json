@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Oh My Food Project by OpenClassRooms",
   "scripts": {
-    "sass": "sass ./sass/main.scss:./public/css/style.css -w --style compressed",
-    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/",
-    "ejs": "./ejs/build-restaurant-html.sh"
+    "sass": "sass ./sass/main.scss:./public/css/style.css -w",
+    "sass-build": "sass ./sass/main.scss:./public/css/style.css --style compressed",
+    "prefix-css": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/",
+    "restaurant-html-build": "./ejs/build-restaurant-html.sh",
+    "build": "npm run sass-build && npm run prefix-css && npm run restaurant-html-build"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,10 @@
   "homepage": "https://github.com/ThomasCharuel/ohmyfood#readme",
   "browserslist": "last 4 versions",
   "dependencies": {
+    "autoprefixer": "^10.4.14",
     "ejs": "^3.1.9",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
     "sass": "^1.59.3"
   }
 }
