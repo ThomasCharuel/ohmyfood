@@ -4,7 +4,8 @@
   "description": "Oh My Food Project by OpenClassRooms",
   "scripts": {
     "sass": "sass ./sass/main.scss:./public/css/style.css -w --style compressed",
-    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/",
+    "ejs": "./ejs/build-restaurant-html.sh"
   },
   "repository": {
     "type": "git",
@@ -12,5 +13,9 @@
   },
   "author": "Thomas Charuel",
   "homepage": "https://github.com/ThomasCharuel/ohmyfood#readme",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "sass": "^1.59.3"
+  }
 }

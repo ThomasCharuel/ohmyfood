@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood! - <%= name %></title>
+
+    <link href="public/css/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&family=Shrikhand&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/fc7bf56647.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <a href="index.html" class="header-nav__previous-link"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="index.html" class="header-nav__home-link">ohmyfood</a>
+        </nav>
+    </header>
+    <main>
+        <header class="restaurant-menu-header">
+            <img src="<%= picture %>" alt="Photo de <%= name %>" class="restaurant-menu-header__image">
+            <div class="restaurant-menu-header__title_wrapper">
+                <h1 class="restaurant-menu-header__title"><%= name %></h1>
+                <button class="restaurant-menu-header__like-button like-button">
+                    <i class="outline-heart fa-regular fa-heart"></i>
+                    <i class="filled-heart fa-solid fa-heart"></i>
+                </button>
+            </div>
+        </header>
+        <section class="restaurant-menu-section">
+            <ol>
+                <% courses.forEach((course, course_i) => { %>
+                <li class="course-list-item">
+                    <h2 class="course-list-item__title course-list-item__title--<%= course_i + 1 %>"><%= course.name %></h2>
+                    <ul class="course-list-item__dishes-listing">
+                        <% course.dishes.forEach((dish, dish_i) => { %>
+                        <li class="course-list-item__dishes-list-item course-list-item__dishes-list-item--<%= course_i + 1 %>-<%= dish_i + 1 %>">
+                            <article class="dish-card">
+                                <div class="dish-card__info-section">
+                                    <h3><%= dish.name %></h3>
+                                    <div class="dish-card__info-section-text">
+                                        <p class="dish-card__info-section-text-description"><%= dish.description %></p>
+                                        <p class="dish-card__info-section-text-price"><%= dish.price %>€</p>
+                                    </div>
+                                </div>
+                                <div class="dish-card__check-section">
+                                    <i class="check-icon fa-solid fa-circle-check"></i>
+                                </div>
+                            </article>
+                        </li>
+                        <% }) %>
+                    </ul>
+                </li>
+                <% }) %>
+            </ol>
+            <div class="restaurant-cta-section">
+                <a href="#" class="restaurant-cta-section__cta-btn cta-btn">Commander</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#" class="footer-nav__link footer-nav__link--logo">ohmyfood</a></li>
+                <li><a href="#" class="footer-nav__link"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#" class="footer-nav__link"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                <li><a href="#" class="footer-nav__link">Mentions légales</a></li>
+                <li><a href="mailto:hello@ohmyfood.tech" class="footer-nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

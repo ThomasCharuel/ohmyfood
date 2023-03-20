@@ -1,0 +1,66 @@
+{
+    "name": "Le délice des sens",
+    "picture": "public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg",
+    "courses": [
+        {
+            "name": "Entrées",
+            "dishes": [
+                {
+                    "name": "Tartare de thon",
+                    "description": "Assaisonné au yuzu",
+                    "price": 25
+                },
+                {
+                    "name": "Bouchée de homard croustillant",
+                    "description": "Et sa farandole de petits légumes",
+                    "price": 35
+                },
+                {
+                    "name": "Velouté de cèpes",
+                    "description": "Aux truffes",
+                    "price": 20
+                }
+            ]
+        },
+        {
+            "name": "Plats",
+            "dishes": [
+                {
+                    "name": "Poulet rôti aux herbes de Provence",
+                    "description": "Et sa crème de truffe",
+                    "price": 40
+                },
+                {
+                    "name": "Langouste rôtie",
+                    "description": "Et ses légumes de saison",
+                    "price": 35
+                },
+                {
+                    "name": "Côte de boeuf Angus",
+                    "description": "Et sa purée de panais",
+                    "price": 44
+                }
+            ]
+        },
+        {
+            "name": "Dessert",
+            "dishes": [
+                {
+                    "name": "Farandole de desserts",
+                    "description": "Du chef",
+                    "price": 18
+                },
+                {
+                    "name": "Crème brulée",
+                    "description": "Revisitée",
+                    "price": 22
+                },
+                {
+                    "name": "Tiramisu",
+                    "description": "À la noisette",
+                    "price": 23
+                }
+            ]
+        }
+    ]
+}
